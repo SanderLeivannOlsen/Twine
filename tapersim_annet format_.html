@@ -9,54 +9,69 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play tapersim(annet format).</tw-noscript></noscript></tw-story>
-<tw-storydata name="tapersim(annet format)" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="7DA43EC1-6D97-4136-9469-ECCFAE0D1409" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.button_1{
-  background-color: 
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"><div id="title-screen" style="text-align:center;">
-  <h1>Welcome to My Twine Game</h1>
-  <p>Press the button below to begin</p>
-  <button onclick="setupGame()">Start Game</button>
-</div>
-
-<div id="passages" style="display:none;">
-  <div id="Start">
-    This is your first passage. Replace this with your actual content.
-    <br><br>
-    <a href="#" onclick="goToPassage('Next Passage')">Continue</a>
-  </div>
-  
-  <div id="Next Passage">
-    This is another passage. Replace this with your actual content.
-    <br><br>
-    <a href="#" onclick="goToPassage('Start')">Back to Start</a>
-  </div>
-</div>
-
-<script>
-// JavaScript function to start the game
-function setupGame() {
-  document.getElementById('title-screen').style.display = 'none';
-  document.getElementById('passages').style.display = 'block';
-  goToPassage('Start');
+<tw-storydata name="tapersim(annet format)" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="7DA43EC1-6D97-4136-9469-ECCFAE0D1409" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	margin: auto;
+	padding-top: 20%;
 }
 
-// JavaScript function to navigate to a passage
-function goToPassage(passageName) {
-  var passages = document.getElementById('passages').children;
-  for (var i = 0; i < passages.length; i++) {
-    passages[i].style.display = 'none';
-  }
-  document.getElementById(passageName).style.display = 'block';
+tw-passage {
+	margin-bottom: 1em;
 }
-</script><tw-passagedata pid="1" name="title_screen" tags="" position="500,175" size="100,100">&lt;div id=&quot;title-screen&quot; style=&quot;text-align:center;&quot;&gt;
-  &lt;h1&gt;Losersimulator&lt;/h1&gt;
-  &lt;p&gt;Press the button below to begin&lt;/p&gt;
-  &lt;button&gt;[[Start Game-&gt;kjefting]]&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="kjefting" tags="" position="500,425" size="100,100">Fattern informerer deg om at du er voksen nå, og at du har til slutten av måneden på å enten flytte ut, eller betale en svært lukrativt hjemmerente.
 
-&lt;button&gt;[[Ignorer problemet-&gt;videospill]]&lt;/button&gt;
-&lt;button&gt;[[Ring en venn etter hjelp-&gt;fremtidsvalg]]&lt;/button&gt;</tw-passagedata><tw-passagedata pid="3" name="videospill" tags="" position="775,525" size="100,100">Du spiller til det blir mørkt, og blir påmint om problemet. Dagen etter bestemmer du deg for å ringe en venn du hadde som har vært i lignede situasjon.
-[[Ring-&gt;fremtidsvalg]]</tw-passagedata><tw-passagedata pid="4" name="fremtidsvalg" tags="" position="500,550" size="100,100">Du ringer vennen din og får to valg [[Velg gründerveien-&gt;Gründer]], eller [[Let etter jobb-&gt;Jobbsøk]]</tw-passagedata><tw-passagedata pid="5" name="Gründer" tags="" position="400,675" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="Jobbsøk" tags="" position="675,675" size="100,100">[[Kiwi]], [[kontorjobb for veninne-&gt;kontorjobb]] [[Vindusselger-&gt;salgsjobb]]</tw-passagedata><tw-passagedata pid="7" name="Kiwi" tags="" position="750,825" size="100,100">Du stikker på jobbintervju og imponerer vedkommende med bemerkelsesverdig sjarm og emanasjon, du går ut av butikken med en ny jobb og en vakt dagen etter.
-[[To uker-&gt;Kiwijobb]]</tw-passagedata><tw-passagedata pid="8" name="kontorjobb" tags="" position="975,825" size="100,100">[[å lese kontrakten-&gt;kontrakt]] [[Ikke lese kontrakten-&gt;Ikke kontrakt]]</tw-passagedata><tw-passagedata pid="9" name="salgsjobb" tags="" position="600,850" size="100,100">Du må ta imot et fullstendig komisjonsbasert lønnssystem
+tw-link {
+	text-decoration: none;
+	color: #007bff;
+	font-weight: bold;
+}
+
+tw-link:hover {
+	text-decoration: underline;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="title_screen" tags="title_screen" position="500,175" size="100,100">(text-colour:red)+(css:&quot;font-size: 100px&quot;)[&#39;&#39;Tapersimulator&#39;&#39;]
+Laget av Sander Leivann Olsen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[Start Game-&gt;kjefting]]
+
+</tw-passagedata><tw-passagedata pid="2" name="kjefting" tags="" position="500,425" size="100,100">Fattern informerer deg om at du er voksen nå, og at du har til slutten av måneden på å enten flytte ut, eller betale en svært lukrativt hjemmerente.
+Til tross for at du ble meget satt ut av denne beskjeden, klarer du å huske at en venn av deg tidligere var i en lignende situasjon og kanskje har noen tips. Likevel er det også fristende å bare spille videre.
+
+[[Ignorer problemet-&gt;videospill]]
+[[Ring en venn etter hjelp-&gt;fremtidsvalg]]</tw-passagedata><tw-passagedata pid="3" name="videospill" tags="" position="775,525" size="100,100">Du spiller til det blir mørkt, og blir påmint om problemet. Dagen etter bestemmer du deg for å ringe vennen du har som har vært i lignede situasjon.
+[[Ring-&gt;fremtidsvalg]]</tw-passagedata><tw-passagedata pid="4" name="fremtidsvalg" tags="" position="525,600" size="100,100">Du snakker med vennen din og informerer han om situasjonen du er i. Etter mye informasjon fra vennen din tar du med deg det viktigste.
+
+Dette er nemlig at han sier du har potensiale som gründer, men at en vanlig jobb vil gjøre nok for å kunne betale hjemmerente innen den 31.
+
+[[Velg gründerveien-&gt;Gründer]], eller [[Let etter jobb-&gt;Jobbsøk]]</tw-passagedata><tw-passagedata pid="5" name="Gründer" tags="" position="375,675" size="100,100">Du søker etter businessmodeller man kan starte hjemmatifra- uten startkapital i noen grad. Du finner til slutt frem til en modell: [[SMMA]](Social media marketing agency)</tw-passagedata><tw-passagedata pid="6" name="Jobbsøk" tags="" position="675,675" size="100,100">Etter trening går du innom kiwi for å fylle på med kullsyrevann, ved, crispisalat, og spaghetti. I det du går ut av butikken skjer det tre ting.
+1. Du vurderer å [[spørre om å jobbe her-&gt;Kiwi]] med det samme.
+
+2. Du møter på veninnen din, og hun tilbyr deg ut av det blå en [[kontorjobb i tømmerfirmaet-&gt;kontorjobb]] hennes. 
+
+3. Eventuelt kan du [[sjekke ut en annonse for en lokal vindusinstallasjonstjeneste-&gt;salgsjobb]] du så rett utenfor.
+</tw-passagedata><tw-passagedata pid="7" name="Kiwi" tags="" position="750,825" size="100,100">Du stikker på jobbintervju og imponerer vedkommende med bemerkelsesverdig sjarm og emanasjon, du går ut av butikken med en ny jobb og en vakt dagen etter.
+[[To uker-&gt;Kiwijobb]]</tw-passagedata><tw-passagedata pid="8" name="kontorjobb" tags="" position="975,825" size="100,100">[[å lese kontrakten-&gt;kontrakt]] [[Ikke lese kontrakten-&gt;Ikke kontrakt]]</tw-passagedata><tw-passagedata pid="9" name="salgsjobb" tags="" position="600,850" size="100,100">Du ser på annonsen og sykler bort til adressen umiddelbart. Du går inn og får faktisk møte daglig leder umiddelbart, hvor begge parter blir enige om et  jobbintervju i samme sekund.
+
+På dette møtet imponerer du sjefen med ekstrem sjarm og vokabulær, (i tillegg til mye gjetting på salgsteorispørsmålene han stilte).
+Han vil tilby deg jobben, men advarer deg at det ikke er noen timelønn, og at man får kun betalt en del av profitten ved hvert salg.
+Dette setter et svært høyt tak på maks mulige penger, men garanterer ikke en eneste krone.
+
+Tar du imot et fullstendig komisjonsbasert lønnssystem?
 [[Ja]]
 [[Nei-&gt;ikke salg]]</tw-passagedata><tw-passagedata pid="10" name="Kiwijobb" tags="" position="750,950" size="100,100">Du ligger ikke an til å kunne betale hjemme- eller borterente
 [[fortsett-&gt;kiwijobbvalg]]</tw-passagedata><tw-passagedata pid="11" name="kiwijobbvalg" tags="" position="750,1075" size="100,100">Vil du fortsette å plukke opp alle mulige vakter på kiwi, og [[satse på at det holde til hjemmerente-&gt;hjemmerente]], eller [[spørre veninnen-&gt;kontorjobb]] din om jobbtilbudet enda gjelder?</tw-passagedata><tw-passagedata pid="12" name="kontrakt" tags="" position="1325,875" size="100,100">Du leser kontrakten, og ser ingenting annet enn en ørliten bagatell med skatteprosentene dine. Lønnen er veldig fin, noe som vil gi deg en mulighet til å flytte ut, tillegg til fine komisjonsbonuser.
@@ -70,16 +85,96 @@ Etter noen dager med juridisk arbeid.....
 Gå til far å forklar det som har skjedd og[[be far om en måned til-&gt;konfronter]]</tw-passagedata><tw-passagedata pid="16" name="ikke åpne" tags="" position="1275,1200" size="100,100">Etter du har nektet å åpne døren gjentatte ganger, slår politiet ned døren. Der står de med veninnen din i håndjern, du forklarer seg, og veninnen din har blitt tatt for grov skattesvindel og hvitevasking av penger. Du forklarer situasjonen- at du ble ansatt dagen før osv, men du blir tatt i varetekt inntil kontrakten din har blitt analysert.
 [[Varetekt-&gt;retten]]</tw-passagedata><tw-passagedata pid="17" name="militær" tags="" position="900,1325" size="100,100">Du takker ja til tilbudet i militæret, og blir satt i førstegangstjenesten. Du gjør det meget bra, og etter flere program i militæret er du ønsker i flere organisasjoner innenfor forsvaret.
 [[Fortsett-&gt;militærslutten]]</tw-passagedata><tw-passagedata pid="18" name="konfronter" tags="" position="1050,1325" size="100,100">Du drar hjem og forklarer situasjonen til faren din, og ber til slutt om nåde og en måned til på å betale dette. [[Han tenker....-&gt;hjemløsslutten]]
-</tw-passagedata><tw-passagedata pid="19" name="retten" tags="" position="1300,1325" size="100,100">[[Dommen-&gt;fengselslutten]]</tw-passagedata><tw-passagedata pid="20" name="militærslutten" tags="" position="900,1450" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="hjemløsslutten" tags="" position="1050,1450" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="fengselslutten" tags="" position="1300,1450" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="hjemmerente" tags="" position="750,1200" size="100,100">Dagen før fristen kommer du hjem og far spør deg om status.
-[[Hjemmerente]]</tw-passagedata><tw-passagedata pid="24" name="Hjemmerente" tags="" position="750,1325" size="100,100">Du klarte å skrape sammen nok penger til å betale hjemmerenten, men omtrent ingen profitt.
-[[Fortsett-&gt;hjemmerenteslutten]]</tw-passagedata><tw-passagedata pid="25" name="hjemmerenteslutten" tags="" position="750,1450" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="tabbe" tags="" position="1425,1075" size="100,100">Du spør angjeldende som sitter i rommet med deg om bagatellen du observerte i kontrakten din...
-[[fortsett-&gt;tabbe2]]</tw-passagedata><tw-passagedata pid="27" name="tabbe2" tags="" position="1425,1200" size="100,100">Han banker på døren og plutselig kommer det to nye inn i rommet. Døren låses bak dem, og nå blir det [[trusler]]</tw-passagedata><tw-passagedata pid="28" name="trusler" tags="" position="1425,1325" size="100,100">De gir deg et fredelig tilbud ved å [[skrive under på kontrakten-&gt;Ikke kontrakt]]. Ellers kan du gå [[ut døren]] å søke en av de andre jobbene.</tw-passagedata><tw-passagedata pid="29" name="ut døren" tags="" position="1575,1075" size="100,100">Dagen etter stikker du på jobbintervju og imponerer vedkommende med bemerkelsesverdig sjarm og emanasjon, du går ut av butikken med en ny jobb og en vakt [[dagen etter]]</tw-passagedata><tw-passagedata pid="30" name="dagen etter" tags="" position="1650,1200" size="100,100">Du blir pågrepet på jobb på kiwi og kastet i baksete av en politibil umiddelbart. Der sitter veninnen som tilbø deg kontorjobben. Du ble kastet med i retten sammen med bl.a, de som var i rommet med deg og kontrakten dagen før. Viser seg at skatteprosentene du la merke til i kontrakten var svært relevante, da du- og resten av gjengen var siktet for hvitvasking og skattesvinn.
-[[retten]]</tw-passagedata><tw-passagedata pid="31" name="Ja" tags="" position="437.5,975" size="100,100">Livet ditt ble plutselig veldig spennende, du har en jobb hvor du kan jobbe så mye du vil, da du ikke har noen timelønn, og kan teoretisk sett tjene så mye du vil i tillegg.
-[[Neste dag]] er første jobbdag, og dine første forsøk på salgsteorien du gjettet mye riktig på i jobbintervjuet.</tw-passagedata><tw-passagedata pid="32" name="ikke salg" tags="" position="850,700" size="100,100">Du går tilbake til de tidligere jobbtilbudene
+</tw-passagedata><tw-passagedata pid="19" name="retten" tags="" position="1250,1325" size="100,100">[[Dommen-&gt;fengselslutten]]</tw-passagedata><tw-passagedata pid="20" name="militærslutten" tags="" position="950,2500" size="100,100">Til tross for at målet var å flytte ut/betale hjemmerente fikk du et annet tilbud langs veien og slo til. 
+
+Bra spilt!</tw-passagedata><tw-passagedata pid="21" name="hjemløsslutten" tags="" position="1100,2500" size="100,100">Du ble sendt på hue ut av døren og er en av norges ca 3500 hjemløse individer. 
+
+
+Bra spilt! 
+
+
+
+(meget sarkastisk ment.)</tw-passagedata><tw-passagedata pid="22" name="fengselslutten" tags="" position="1400,2500" size="100,100">Det viser seg at det var en meget stor tabbe å noen gang involvere deg med kontrojobben til veninnen din. Viser seg at noen ting faktisk er for godt til å være sanne.
+
+Dette var dommerens ord:
+I rettssaken mot **** fant juryen vedkommende skyldig i omfattende skattesnyteri og hvitvasking av penger. Personen ble dømt til 10 års fengsel uten mulighet for prøveløslatelse, samt en betydelig bot på 10 millioner kroner. Dommeren ga også pålegg om tilbakebetaling av de ulovlig opparbeidede midlene, samt beslagleggelse av eiendeler knyttet til de ulovlige transaksjonene
+
+Bra spilt!
+
+
+(meget sarkastisk ment)</tw-passagedata><tw-passagedata pid="23" name="hjemmerente" tags="" position="750,1200" size="100,100">Dagen før fristen kommer du hjem og far spør deg om status.
+[[Hjemmerente]]</tw-passagedata><tw-passagedata pid="24" name="Hjemmerente" tags="" position="750,1325" size="100,100">Du klarte å skrape sammen nok penger til å betale hjemmerenten, men omtrent ingen profitt. Dermed blir du møtt med omtrent nøyaktig samme situasjon neste måned.
+[[Fortsett-&gt;hjemmerenteslutten]]</tw-passagedata><tw-passagedata pid="25" name="hjemmerenteslutten" tags="" position="800,2500" size="100,100">Du har klart å skrape sammen nok penger i løpet av måneden til å betale fattern for rente.
+
+Bra spilt!</tw-passagedata><tw-passagedata pid="26" name="tabbe" tags="" position="1425,1075" size="100,100">Du spør angjeldende som sitter i rommet med deg om bagatellen du observerte i kontrakten din...
+[[fortsett-&gt;tabbe2]]</tw-passagedata><tw-passagedata pid="27" name="tabbe2" tags="" position="1425,1200" size="100,100">Han banker på døren og plutselig kommer det to nye inn i rommet. Døren låses bak dem, og nå blir det [[trusler]]</tw-passagedata><tw-passagedata pid="28" name="trusler" tags="" position="1450,1325" size="100,100">De gir deg et fredelig tilbud ved å [[skrive under på kontrakten-&gt;Ikke kontrakt]]. Ellers kan du gå [[ut døren]] å søke en av de andre jobbene.</tw-passagedata><tw-passagedata pid="29" name="ut døren" tags="" position="1575,1075" size="100,100">Dagen etter stikker du på jobbintervju og imponerer vedkommende med bemerkelsesverdig sjarm og emanasjon, du går ut av butikken med en ny jobb og en vakt [[dagen etter]]</tw-passagedata><tw-passagedata pid="30" name="dagen etter" tags="" position="1650,1200" size="100,100">Du blir pågrepet på jobb på kiwi og kastet i baksete av en politibil umiddelbart. Der sitter veninnen som tilbø deg kontorjobben. Du ble kastet med i retten sammen med bl.a, de som var i rommet med deg og kontrakten dagen før. Viser seg at skatteprosentene du la merke til i kontrakten var svært relevante, da du- og resten av gjengen var siktet for hvitvasking og skattesvinn.
+[[retten]]</tw-passagedata><tw-passagedata pid="31" name="Ja" tags="" position="500,975" size="100,100">Livet ditt ble plutselig veldig spennende, du har en jobb hvor du kan jobbe så mye du vil, da du ikke har noen timelønn, og kan teoretisk sett tjene så mye du vil i tillegg.
+[[Neste dag]] er første jobbdag, og dine første forsøk på salgsteorien du gjettet mye riktig på i jobbintervjuet.</tw-passagedata><tw-passagedata pid="32" name="ikke salg" tags="" position="850,725" size="100,100">Du går tilbake til de tidligere jobbtilbudene
 [[kontorjobb]]
-[[Kiwi]]</tw-passagedata><tw-passagedata pid="33" name="Neste dag" tags="" position="437.5,1100" size="100,100">Jobben din går rett og slett ut på å banke på hos folk, for så å overbevise dem om at de bør kjøpe nye vinduer.
-[[Første dør]]</tw-passagedata><tw-passagedata pid="34" name="Første dør" tags="" position="437.5,1225" size="100,100">Du banker på, og hjertet banket i halsen på deg mens du hørte føttene på vedkommende på innsiden komme nærmere.
-Du tenker på hva du bør åpne med</tw-passagedata></tw-storydata>
+[[Kiwi]]</tw-passagedata><tw-passagedata pid="33" name="Neste dag" tags="" position="550,1100" size="100,100">Jobben din går rett og slett ut på å banke på hos folk, for så å overbevise dem om at de bør kjøpe nye vinduer. Du er meget nervøs da du våkner til liv denne dagen.
+[[Salgsforsøk 1-&gt;Salg 1]]</tw-passagedata><tw-passagedata pid="34" name="Salg 1" tags="" position="550,1250" size="100,100">(set: $salgstall to 0)
+Du banker på, og hjertet banker i halsen på deg mens du hører føttene på vedkommende på innsiden komme nærmere.
+Du tenker på hva du bør spille på når du forsøker å selge.
+[[Vinduene deres er ikke skuddsikre-&gt;skuddsikre]], så du kan forsøke å snakke om farene ved dette.
+[[De har 2-lagsvinduer, ikke 3-lags-&gt;lagyapping]], en liten bagatell du kan forsøke å overbevise med.</tw-passagedata><tw-passagedata pid="35" name="SMMA" tags="" position="225,825" size="100,100">(Lærer om modellen: outreach; etc)
+Du bruker noen uker på å lære om facebook-annonsering, hvordan man får sosiale kontoer til å vokse. Deretter lærer du om de to mest effektive outreach metodene [[Email]] og [[Telefon]]</tw-passagedata><tw-passagedata pid="36" name="Email" tags="" position="125,950" size="100,100">Du begynner å lage emailen du skal massesende til nærliggende bedrifter og den følgende dagen er du i gang.
+
+[[Bedriftstypevalg]]</tw-passagedata><tw-passagedata pid="37" name="Telefon" tags="" position="325,950" size="100,100">Du sikter mot å ta 20 telefoner hver dag, i tillegg til eventuelle møter og arbeid.
+[[Bedriftstypevalg2]]]</tw-passagedata><tw-passagedata pid="38" name="Bedriftstypevalg" tags="" position="150,1175" size="100,100">Du tenker det kan være lurt å bestemme deg for en type bedrift å kontakte, slik at du gradvis lærer om en niche og markedet rundt det. I tillegg tenker du det kan være lurt å velge en bedriftstype som har færre store salg, istedenfor flere små- slik at de får mer ut av hver kunde du skaffer dem.
+[[Bassenginstallasjonstjenester]]
+[[Husbyggtjenester-&gt;Bassenginstallasjonstjenester]]</tw-passagedata><tw-passagedata pid="39" name="Bedriftstypevalg2" tags="" position="375,1425" size="100,100">Du tenker det kan være lurt å bestemme deg for en type bedrift å kontakte, slik at du gradvis lærer om en niche og markedet rundt det. I tillegg tenker du det kan være lurt å velge en bedriftstype som har færre store salg, istedenfor flere små- slik at de får mer ut av hver kunde du skaffer dem.
+[[Bassenginstallasjonstjenester2]]
+[[Husbyggtjenester2]]</tw-passagedata><tw-passagedata pid="40" name="Bassenginstallasjonstjenester" tags="" position="50,1325" size="100,100">Du begynner med å finne disse bedriftene og sende ut eposter. Du får ingen svar.
+[[Fortsett-&gt;etteremail]]</tw-passagedata><tw-passagedata pid="41" name="Bassenginstallasjonstjenester2" tags="" position="300,1550" size="100,100">Du ringer og ringer hver dag, og får kjapt sikret deg flere møter. Du håndterer også disse på en svært god møte, og får sikret deg flere jobber og avtaler.
+
+Etter noen uker i arbeid tjener du nok til å leie en leilighet!
+[[Fortsett-&gt;leilighetslutt]]</tw-passagedata><tw-passagedata pid="42" name="Husbyggtjenester2" tags="" position="450,1550" size="100,100">Du ringer og ringer minst 20 bedrifter daglig i flere uker. Det ser mørkt ut frem til den 25. Du får sikret deg en møte med eieren av bedriften den 31.
+[[Møtet]]</tw-passagedata><tw-passagedata pid="43" name="etteremail" tags="" position="50,1450" size="100,100">Du blir desperat og lager konstant nye maler for epostene dine. Desverre var du nok for utålmodig, og du har enda ikke så mye som et svar, enda mindre; en krone den dagen fattern skal ha pengene sine.
+
+[[Fortsett-&gt;konfronter]]</tw-passagedata><tw-passagedata pid="44" name="Møtet" tags="" position="450,1675" size="100,100">Du våkner den 31. og drar umiddelbart på trening for å få tankene vekk fra dagens begivenhet.
+Møtet nærmer seg og du lurer på hvorvidt du skal ha på deg [[dress]] [[skjorte]] eller [[t-skjorte]]</tw-passagedata><tw-passagedata pid="45" name="leilighetslutt" tags="" position="1250,2500" size="100,100">Du løste problemet plettfritt og tjente til og med pengene til en egen leilighet.
+
+Bra spilt!</tw-passagedata><tw-passagedata pid="46" name="dress" tags="" position="450,1800" size="100,100">Etter møtet er du meget begeistret, du har nettopp sikret deg en fulltidsjobb som sjef for markedsføring og sosiale medier i denne tjenesten. I tillegg fikk du en signeringsbonus i den grad at du kan leie en leilighet.
+[[Leilighet-&gt;leilighetslutt]]
+[[Hjemme-&gt;hjemmerenteslutten]]</tw-passagedata><tw-passagedata pid="47" name="skjorte" tags="" position="575,1800" size="100,100">Når møtet var ferdig er du i strålende humør, du har nettopp sikret deg 12 000kr i måneden de første 3 månedene, i tillegg til en mulig ett års utvidelse av kontrakten med større lønn, skulle det være ønskelig.
+[[Betal fattern-&gt;hjemmerenteslutten]]</tw-passagedata><tw-passagedata pid="48" name="t-skjorte" tags="" position="325,1800" size="100,100">Til tross for at du følte møtet gikk ganske bra, fikk du et nei av eieren. Som følge av at du ikke fikk sikret noen flere møter/avtaler, og kalenderen sier at du må betale renten i morgen, har du ingen andre idèer enn å konfrontere fattern og spørre om nåde.
+[[konfronter]]</tw-passagedata><tw-passagedata pid="49" name="skuddsikre" tags="" position="700,1525" size="100,100">Du tjatrer om fordeler og den slags ved vinduene dine i rundt 5 minutter. De forteller deg at de ikke er særlig interreserte i vinduene dine, og ønsker deg et godt liv videre- du sier adjø og fortsetter på din ferd.
+(set: $salgstall to $salgstall + 0)
+[[...-&gt;Salg 2]]</tw-passagedata><tw-passagedata pid="50" name="lagyapping" tags="" position="850,1525" size="100,100">Du begynner pitchen din av vinduslagene sin betydning til vedkommende som åpnet døren, etter et par minutter bryter individet inn i setningen din og stiller deg flere spørsmål: pris, installasjonstid, etc. Deretter forteller den nevnte skapningen at de er svært interesserte.
+Ditt første salg er gjennomført.
+(set: $salgstall to $salgstall +1)
+[[...-&gt;Salg 2]]</tw-passagedata><tw-passagedata pid="51" name="Salg 2" tags="" position="775,1650" size="100,100">Du går videre til neste hus og tenker i lignende baner som forrige gang. Hvilke ting skal jeg basere meg på.
+
+
+Vinduene dine har teknisk sett bedre [[Ultrafiolett strålingsblokkering]] enn de fleste andre på markedet, sannsynligvis også de du skal til.
+[[Materialene	-&gt;Materialer]] dine vinduer er laget av det sjeldneste materialet blant de vanlige til vinduer, så du kan satse på at de ikke har sine vinduer laget av det samme, og overbevise basert på dette.</tw-passagedata><tw-passagedata pid="52" name="Ultrafiolett strålingsblokkering" tags="" position="775,1775" size="100,100">Du ringer på et hus og forteller om fordelene ved å bytte vinduer til de du har å by på, spesifikt i forhold til de farlige UV-strålene vinduene dine hjelper med.
+Vedkommende bryter etterhvert inn og forteller om at hun har bodd der i mange år og at kroppen hennes helt klart klarer å håndtere UV-strålene selv.
+[[...-&gt;Salg 3]]
+(set: $salgstall to $salgstall + 0)</tw-passagedata><tw-passagedata pid="53" name="Materialer" tags="" position="900,1775" size="100,100">Etter at huseier åpner døren, begynner du umiddelsbart med den grusomt kjedelige presentasjonen av hvordan dine fiberglassbaserte vinduer trumfer deres vinylbaserte vinduer hver dag i uken.
+Vedkommende ser faktisk interresert ut, og når du spør om de er interreserte- svarer de umiddelbart ja.
+Sterkt salg!
+[[...-&gt;Salg 3]]
+(set: $salgstall to $salgstall + 1)</tw-passagedata><tw-passagedata pid="54" name="Salg 3" tags="" position="850,1925" size="100,100">Det neste salget du tar er noen dager før fattern krever rente, og du satser på at du kan nå 2 forsøk til før den datoen.
+Som vanlig tenker du på hva du skal snakke om, og tenker denne gangen på enten:
+[[Rammeutseende]], du kan satse på at du finner en som bryr seg om hvordan rammene ser ut, eller hvordan strukturen deres ser ut.
+
+Eventuelt kan du [[fortelle om klimafordelene ved dine vinduer-&gt;klima]], og satser på at du finner Greta Thuberg eller noen av hennes praktikanter.</tw-passagedata><tw-passagedata pid="55" name="Rammeutseende" tags="" position="775,2050" size="100,100">Du åpner døren og gjør din vanlige introduksjon, og snakker deretter om rammeutseende en liten stund, før vedkommende ber om du kan vise foto. Etter dette ble gjort var hun solgt. Pent salg!
+
+[[Fortsett-&gt;salgsslutt]]
+(set: $salgstall to $salgstall + 1)</tw-passagedata><tw-passagedata pid="56" name="klima" tags="" position="925,2050" size="100,100">Etter du har åpnet døren, fortalt introduksjonen din, og deretter begynt smått på klimapreiket ditt. Forteller damen at hun er dritt lei av klima og miljøprat, og ber deg om å gå.
+Desverre ingen suksess.
+
+[[Fortsett-&gt;salgsslutt]]
+(set: $salgstall to $salgstall + 0)</tw-passagedata><tw-passagedata pid="57" name="salgsslutt" tags="" position="850,2175" size="100,100">Du har gjennomført salgforsøkene du fikk tid til, da fattern har bedt om rente i dag. Du bestemmer deg for å dra hjem å møte fattern, du er litt usikker på om du har nok penger, og tenker det beste du kan gjøre er å gi ham pengene du har, og eventuelt be om nåde hvis det ikke er nok.
+
+
+(if: $salgstall &gt;= 2)[
+[[Fortsett-&gt;hjemmerenteslutten]]
+]
+
+(else:)[
+[[Fortsett-&gt;konfronter]]
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
